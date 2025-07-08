@@ -27,7 +27,7 @@
 ---
 
 ## 2. [DACON] [건설용 자갈 암석 종류 분류 AI 경진대회](https://dacon.io/competitions/official/236471/overview/description)
-#### <div align='right'>최종 방문일: 2025-05-30</div>
+#### <div align='right'>최종 방문일: 2025-07-08</div>
 
 <table>
 <tr>
@@ -56,7 +56,7 @@
 ---
 
 ## 3. [DACON] [갑상선암 진단 분류 해커톤: 양성과 악성, AI로 정확히 구분하라!](https://dacon.io/competitions/official/236488/overview/description)
-#### <div align='right'>최종 방문일: 2025-06-30</div>
+#### <div align='right'>최종 방문일: 2025-07-08</div>
 
 <table>
 <tr>
