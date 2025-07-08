@@ -1,0 +1,2 @@
+학습 및 평가 이미지는 DACON 대회 페이지에서 제공되며, 본 레포지토리에는 포함되어 있지 않습니다.
+URL: https://dacon.io/competitions/official/236471/data
