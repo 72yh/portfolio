@@ -63,7 +63,7 @@
 * 제한된 연산 자원을 고려해, [ImageNet](https://www.image-net.org/)에서 검증된 ConvNeXt Base, Swin V2 Small, EfficientNet V2 Medium을 기반 모형으로 활용하였다. 세 모형 모두 사전학습된 가중치를 초기값으로 사용해 학습을 진행하였다.
 * 더 많은 파라미터를 가진 모형이 성능 면에서 유리할 것으로 보였으나, 제한된 연산 자원으로 인해 경량 모형들을 다수 활용한 앙상블 전략을 선택하였다.
 * 단순 평균과 같은 관습적인 앙상블 방식 대신, 각 모형의 OOF(Out-of-Fold) 예측 결과를 활용하여 교차 검증 Focal Loss를 최소화하는 방향으로 가중치를 최적화하였다.
-* 자원 효율 향상을 위해 자동 혼합 정밀도(Automatic Mixed Precision, AMP) 기법을 도입하고, `torch.float32` 대신 `torch.float16`을 적극적으로 활용하였다.
+* 자원 효율 향상을 위해 자동 혼합 정밀도(Automatic Mixed Precision, AMP) 기법을 도입하여 `torch.float32` 대신 `torch.float16`을 적극적으로 활용하였다.
 * 클래스 불균형을 고려해, 학습 및 검증 데이터가 동일한 클래스 비율을 갖도록 분할한 후, 손실 함수로 Focal Loss를 사용하였다. Focal Loss와 오버샘플링을 함께 적용한 실험에서 성능 저하가 발생하여, 모형 개발 과정에서 해당 전략은 제외하였다.
 * 다양한 환경에서 촬영된 자갈의 색상, 질감, 위치 등의 변화를 모형이 인식할 수 있도록, 회전, 노이즈 추가 등 다양한 데이터 증강(Data Augmentation) 기법을 적용하였다.
 
