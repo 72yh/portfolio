@@ -2,13 +2,15 @@
 저장소 내 각 폴더는 포트폴리오에 기재된 프로젝트 제목과 동일한 이름으로 구성되어 있으며, 해당 프로젝트를 수행하는 데 사용된 파이썬 코드(`.py`, `.ipynb`), 데이터, 요약 슬라이드가 포함되어 있습니다.
 
 ## 1. [LG Aimers 7기] ???
-#### <div align='right'>[URL](https://lgaimers.ai/)&nbsp;&nbsp;&nbsp;&nbsp;최종 방문일: 2025-??-??</div>
+#### <div align='right'>[URL](https://lgaimers.ai/)&nbsp;&nbsp;&nbsp;&nbsp;최종 방문일: 2025.??.??</div>
 
 <table>
 <tr>
 <td>
 <details>
 <summary>열기 / 닫기</summary>
+
+<br>2025.??.?? - 2025.??.??</div>
   
 ### 분석 개요
 
@@ -28,13 +30,15 @@
 ---
 
 ## 2. [DACON] 건설용 자갈 암석 종류 분류 AI 경진대회
-#### <div align='right'>[URL](https://dacon.io/competitions/official/236471/overview/description)&nbsp;&nbsp;&nbsp;&nbsp;최종 방문일: 2025-07-08</div>
+#### <div align='right'>[URL](https://dacon.io/competitions/official/236471/overview/description)&nbsp;&nbsp;&nbsp;&nbsp;최종 방문일: 2025.07.08</div>
 
 <table>
 <tr>
 <td>
 <details>
 <summary>열기 / 닫기</summary>
+
+<br>2025.04.26 - 2025.05.28
 
 ### 분석 개요
 * 자갈의 암석 종류는 콘크리트와 아스팔트의 품질에 직접적인 영향을 미치므로, 정확한 분류가 요구된다.
@@ -99,6 +103,8 @@
 <details>
 <summary>열기 / 닫기</summary>
 
+<br>2025.??.?? - 2025.??.??</div>
+
 ### 분석 개요
 
 ### 분석 대상
@@ -125,6 +131,8 @@
 <details>
 <summary>열기 / 닫기</summary>
 
+<br>2025.??.?? - 2025.??.??</div>
+
 ### 분석 개요
 
 ### 분석 대상
@@ -150,6 +158,8 @@
 <td>
 <details>
 <summary>열기 / 닫기</summary>
+
+<br>2025.??.?? - 2025.??.??</div>
 
 ### 분석 개요
 
