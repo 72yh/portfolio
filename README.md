@@ -143,12 +143,21 @@
 * 평가 기준: Binary F1 Score
 
 ### 분석 방안
-* 클래스 불균형을 고려하여 `StratifiedKFold`와 `optuna`로 `LGBMClassifier`, `XGBClassifier`, `BalancedRandomForestClassifier`의 최적 하이퍼파라미터를 탐색하고, 최종적으로 앙상블을 구성하였다.
+* 클래스 불균형을 고려하여 `StratifiedKFold`와 `optuna`를 통해 `LGBMClassifier`, `XGBClassifier`, `BalancedRandomForestClassifier`의 최적 하이퍼 파라미터를 탐색한 후, 최종적으로 앙상블을 구성하였다.
 * 각 모형의 Softmax 출력값을 단순 평균하여 앙상블을 구성하였으며, `optuna`를 통해 교차 검증 F1 Score를 최대화하는 악성 클래스 판별 임계값을 추가적으로 도출하였다.
 * 목표 기반 통계량(Target-Based Statistic)이 의료 데이터에서 효과적이라는 점에 착안하여, 범주형 변수는 악성 오즈비(Odds Ratio)를 반영한 WOE(Weight of Evidence)로 인코딩하였다. 단, 교차 검증 중 데이터 유출을 막기 위해 각 학습 폴드 기준으로 WOE를 계산하였다.
-* 
+* 연속형 변수를 `KMeans`로 군집화해 새로운 범주형 변수로 추가하였다. 해당 변수의 유의성이 낮더라도, 의사결정나무 기반 모형에서는 성능에 큰 영향을 주지 않음을 고려하였다.
 
 ### 분석 결과
+* 최종 제출 결과: 총 661명의 참가자들 중 153등을 기록하였으나, 상위 300등까지의 점수 차이가 매우 근소하였다.
+  
+  |구분 |순위 |Binary F1 |
+  |:------|------:|------:|
+  |**최종 제출** |**153** |**0.50946** |
+  |- |1 |0.50985 |
+  |- |2 |0.50984 |
+  |- |3 |0.50984 |
+  |상위 10% |66 |0.50974|
 
 ### 개선점
 
