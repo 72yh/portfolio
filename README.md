@@ -172,7 +172,7 @@
   |:------|:------|------:|
   |TRAIN_0000	|Cl.OC1(Cc2cccc(Br)c2)CCNCC1 |12.50 |
   |TRAIN_0001	|Brc1ccc2OCCc3ccnc1c23 |4.45 |
-  |TRAIN_0002	|CC1(CO)CC(=NO1)c2cc(c(F)cc2Cl)[N+](=O)[O-] |4.92 |
+  |TRAIN_0002	|CC1(CO)CC(=NO1)c2cc(c(F)cc2Cl)&#91;N+&#93;(=O)[O-] |4.92 |
   |... |... |... |
   
 * 평가 데이터: 총 100개의 분자에 대한 Canonical SMILES가 제공되었다.
