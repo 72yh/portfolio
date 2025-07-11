@@ -202,7 +202,7 @@
   |`Canonical_Smiles` |분자 구조 데이터 |
   |`Inhibition` |CYP3A4 저해율 (%) |
   
-* 학습 데이터: 총 1,681개의 분자에 대한 고유 구조 문자열, Canonical SMILES가 제공되었다. 아래는 데이터의 예시이다.
+* 학습 데이터: 총 1,681개의 분자에 대한 고유 구조 문자열(Canonical SMILES)가 제공되었다. 아래는 데이터의 예시이다.
   
   |`ID` |`Canonical_Smiles` |`Inhibition`|
   |:------|:------|------:|
