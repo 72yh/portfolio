@@ -122,7 +122,7 @@
   |`Race` |인종 |
   |`Family_Background` |가족력 여부 |
   |`Radiation_History` |방사선 노출 이력 |
-  |`Iodine_Deficiency` |요오드 결핍 여부 |
+  |`Iodine_Deficiency` |아이오딘 결핍 여부 |
   |`Smoke` |흡연 여부 |
   |`Weight_Risk` |체중 관련 위험도 |
   |`Diabetes` |당뇨병 여부 |
