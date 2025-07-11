@@ -153,8 +153,34 @@
 * 약물의 분자 구조 정보를 기반으로 CYP3A4 억제율을 예측하는 AI 모형 개발을 목표로 한다.
 
 ### 주요 역할
+* 실전 데이터 분석 경험이 부족한 대학원 동료들이 참여할 수 있도록 팀을 조직하여 프로젝트를 수행하였다.
+* 도메인 지식에 대한 사전 조사를 수행한 후, 분석에 필요한 데이터를 확보하였다.
+* 각 팀원이 담당한 모형의 하이퍼파라미터 설정을 지원하고, 전체 모형을 통합하는 앙상블 전략을 설계하였다.
 
 ### 분석 대상
+* 데이터 명세:
+
+  |변수명 |변수 상세 |
+  |:------|:------|
+  |`ID` |샘플별 고유 ID |
+  |`Canonical_Smiles` |분자 구조 데이터 |
+  |`Inhibition` |CYP3A4 저해율 (%) |
+  
+* 학습 데이터: 총 1,681개의 분자에 대한 고유 구조 문자열, Canonical SMILES가 제공되었다. 아래는 데이터의 예시이다.
+  
+  |`ID` |`Canonical_Smiles` |`Inhibition`|
+  |:------|:------|------:|
+  |TRAIN_0000	|Cl.OC1(Cc2cccc(Br)c2)CCNCC1 |12.50 |
+  |TRAIN_0001	|Brc1ccc2OCCc3ccnc1c23 |4.45 |
+  |TRAIN_0002	|CC1(CO)CC(=NO1)c2cc(c(F)cc2Cl)[N+](=O)[O-] |4.92 |
+  |... |... |... |
+  
+* 평가 데이터: 총 100개의 분자에 대한 Canonical SMILES가 제공되었다.
+* 평가 기준: NRMSE와 Pearson 상관 계수를 평가 지표로 사용하였다.
+
+  $$
+  \text{Score} = 0.5 * \left[ \left\\{ 1 - \min(\text{NRMSE}, 1) \right\\} + \text{Pearson Correlation Coefficient} \right]
+  $$
 
 ### 분석 방안
 
