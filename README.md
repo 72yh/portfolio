@@ -176,7 +176,7 @@
   |... |... |... |
   
 * 평가 데이터: 총 100개의 분자에 대한 Canonical SMILES가 제공되었다.
-* 평가 기준: NRMSE와 Pearson 상관 계수를 평가 지표로 사용하였다.
+* 평가 기준: NRMSE와 Pearson 상관 계수를 결합한 지표를 평가 기준으로 사용하였다.
 
   $$
   \text{Score} = 0.5 * \left[ \left\\{ 1 - \min(\text{NRMSE}, 1) \right\\} + \text{Pearson Correlation Coefficient} \right]
