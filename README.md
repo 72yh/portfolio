@@ -144,7 +144,7 @@
 * 평가 기준: Binary F1 Score
 
 ### 분석 방안
-* 클래스 불균형을 고려하여 `StratifiedKFold`와 `optuna`를 통해 `LGBMClassifier`, `XGBClassifier`, `BalancedRandomForestClassifier`의 최적 하이퍼파라미터를 탐색하였다.
+* 클래스 불균형을 고려하며 `StratifiedKFold`와 `optuna`를 통해 `LGBMClassifier`, `XGBClassifier`, `BalancedRandomForestClassifier`의 최적 하이퍼파라미터를 탐색하였다.
 * 각 모형의 Softmax 출력값을 단순 평균하여 앙상블을 구성하였으며, `optuna`를 통해 교차 검증 F1 Score를 최대화하는 악성 클래스 판별 임계값(Threshold)을 추가적으로 도출하였다.
 * 목표 기반 통계량(Target-Based Statistic)이 의료 데이터에서 효과적이라는 점에 착안하여, 범주형 변수는 악성 오즈비(Odds Ratio)를 반영한 WOE(Weight of Evidence)로 인코딩하였다. 단, 교차 검증 중 데이터 유출을 막기 위해 각 학습 폴드 기준으로 WOE를 계산하였다.
 * 연속형 변수를 `KMeans`로 군집화해 새로운 범주형 변수로 추가하였다. 해당 변수의 유의성이 낮더라도, 의사결정나무 기반 모형에서는 성능에 큰 영향을 주지 않음을 고려하였다.
@@ -283,8 +283,9 @@
   * `OUTER JOIN`이 아닌 `INNER JOIN` 방식으로 결합된 소방·기상 데이터가 제공되어, 신고가 일어나지 않은 날짜의 정보는 데이터에서 완전히 제외되었다. 이로 인해 신고 건수가 0인 날은 예측이 불가능하였으며, 통계적 모형이 구조적으로 제한되었다.
   
 ### 분석 방안
-* 결측된 기상 자료는 날짜와 지역을 고려하여 보간하였다.
-* 
+* 기상 자료의 결측값은 날짜와 지역을 고려하여 보간하였다.
+* 데이터 유출에 주의하며 `TimeSeriesSplit`과 `optuna`를 통해 `LGBMRegressor`, `RandomForestRegressor`, `XGBRegressor`의 최적 하이퍼파라미터를 탐색하였다.
+* 각 모형의 예측값을 메타 피처로 활용해 `Ridge` 회귀 기반의 앙상블을 수행하였으며, `optuna`를 통해 교차 검증 RMSE를 최소화하는 `alpha` 값을 탐색하였다.
 
 ### 분석 결과
 
