@@ -263,16 +263,16 @@
   |변수명 |변수 상세 |데이터 출처 |파생 여부 |
   |:------|:------|:-----:|:-----:|
   |`call_count` |일 단위 신고 건수 |공모전 기본 제공 |✕ |
-  |`address_gu` |부산광역시 신고 접수 군·구 |공모전 기본 제공 |✕ |
-  |`sub_address` |부산광역시 신고 접수 읍·면·동 |공모전 기본 제공 |✕ |
+  |`address_gu`, `sub_address` |부산광역시 신고 접수 군·구 및 읍·면·동 |공모전 기본 제공 |✕ |
   |`stn` |AWS 지점 코드 (기상 관측 지점) |공모전 기본 제공 |✕ |
-  |`ta_min` 외 8개 |일 단위 기상 자료 (기온, 강수량, 풍속, 습도 등) |공모전 기본 제공 |✕ |
-  |`year`, `month`, `day` |신고 접수 연월일 |공모전 기본 제공 |◯ |
-  |`day_of_the_week` |신고 접수 요일 |공모전 기본 제공 |◯ |
-  |`is_aug_sep` |신고 접수 날짜의 8월·9월 여부 |공모전 기본 제공 |◯ |
-  |`gu_old` 외 10개 |신고 접수 전월 군·구 및 읍·면·동별 인구 정보|[국가 통계 포털](https://kosis.kr/statHtml/statHtml.do?sso=ok&returnurl=https%3A%2F%2Fkosis.kr%3A443%2FstatHtml%2FstatHtml.do%3FtblId%3DDT_B1%26orgId%3D202%26) |✕ |
-  |`구급`, `구조`, `화재`, `기타` |대분류별 전일 신고 건수 |공모전 기본 제공 |◯ |
-  |`call_sum` 외 12개 |
+  |`ta_min` 외 8개 |일 단위 기상 정보 (기온, 강수량, 풍속, 습도 등) |공모전 기본 제공 |✕ |
+  |`hm_range` 외 7개 |일 단위 기상 파생 변수 |공모전 기본 제공 |◯ |
+  |`gu_ta_min` 외 7개 |구별 전년도 기상 파생 변수 |공모전 기본 제공 |◯ |
+  |`year` 외 4개 |신고 접수 연월일, 요일, 8월·9월 여부 |공모전 기본 제공 |◯ |
+  |`gu_old` 외 10개 |신고 접수 전월 군·구 및 읍·면·동별 인구 정보 |[국가 통계 포털](https://kosis.kr/statHtml/statHtml.do?sso=ok&returnurl=https%3A%2F%2Fkosis.kr%3A443%2FstatHtml%2FstatHtml.do%3FtblId%3DDT_B1%26orgId%3D202%26) |✕ |
+  |`call_sum` 외 23개 |이전 신고 이력 |공모전 기본 제공 |◯ |
+  |`gu_lat` 외 3개 |군·구 및 읍·면·동별 위경도 |[국토교통부](https://www.vworld.kr/dtmk/dtmk_ntads_s002.do?dsId=30603) |✕ |
+  |`gu_cluster` |위경도 클러스터 |[국토교통부](https://www.vworld.kr/dtmk/dtmk_ntads_s002.do?dsId=30603) |◯ | 
   
 
 
