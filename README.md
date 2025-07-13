@@ -341,7 +341,7 @@
 
 * 데이터 유출에 주의하며 `TimeSeriesSplit`과 `optuna`를 통해 `LGBMRegressor`, `RandomForestRegressor`, `XGBRegressor`의 최적 하이퍼파라미터를 탐색하였다.
 
-* 각 모형의 예측값을 Meta Feature로 활용해 `Ridge` 회귀 기반의 앙상블을 수행하였으며, `optuna`를 통해 교차 검증 RMSE를 최소화하는 `alpha` 값을 탐색하였다.
+* 각 모형의 예측값을 Meta Feature로 활용해 `Ridge` 회귀 기반의 앙상블을 수행하였으며, `optuna`를 통해 교차 검증 RMSE를 최소화하는 `alpha`를 탐색하였다.
 
 ### 분석 결과
 
