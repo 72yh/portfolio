@@ -284,8 +284,8 @@
   
 ### 분석 방안
 * 기상 자료의 결측값은 날짜와 지역을 고려하여 보간하였다.
-* 자료의 비정규성을 고려해 Spearman 상관 계수를 사용하여 기상 변수와 신고 건수 사이의 상관 관계를 분석하였다.
-* GAM(Generalized Additive Model)의 Partial Dependence Plot을 활용하여 기상 변수와 신고 건수 사이의 비선형 관계를 분석하였다.
+* 자료의 비정규성을 고려해 Spearman 상관 계수를 사용하여 기상 변수와 신고 건수 사이의 상관 관계를 탐색하였다.
+* GAM(Generalized Additive Model)의 Partial Dependence Plot을 활용하여 기상 변수와 신고 건수 사이의 비선형 관계를 탐색하였다.
 * 데이터 유출에 주의하며 `TimeSeriesSplit`과 `optuna`를 통해 `LGBMRegressor`, `RandomForestRegressor`, `XGBRegressor`의 최적 하이퍼파라미터를 탐색하였다.
 * 각 모형의 예측값을 메타 피처로 활용해 `Ridge` 회귀 기반의 앙상블을 수행하였으며, `optuna`를 통해 교차 검증 RMSE를 최소화하는 `alpha` 값을 탐색하였다.
 
