@@ -75,7 +75,7 @@
 
 * 단순 평균과 같은 관습적인 앙상블 방식 대신, 각 모형의 OOF(Out-of-Fold) 예측 결과를 활용하여 교차 검증 손실 함수를 최소화하는 가중치를 도출하였다.
 
-* 자원 효율 향상을 위해 자동 혼합 정밀도(Automatic Mixed Precision, AMP) 기법을 도입하여 `torch.float32` 대신 `torch.float16`을 적극적으로 활용하였다.
+* 자원 효율 향상을 위해 AMP(Automatic Mixed Precision) 기법을 도입하여 `torch.float32` 대신 `torch.float16`을 적극적으로 활용하였다.
 
 * 클래스 불균형을 고려해, 학습 및 검증 데이터가 동일한 클래스 비율을 갖도록 분할한 후, 손실 함수로 Focal Loss를 사용하였다. Focal Loss와 오버샘플링을 함께 적용한 실험에서 성능 저하가 발생하여, 모형 개발 과정에서 해당 전략은 제외하였다.
 
