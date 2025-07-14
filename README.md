@@ -112,7 +112,7 @@
 ---
 
 ## 3. [DACON] 갑상선암 진단 분류 해커톤: 양성과 악성, AI로 정확히 구분하라!
-#### <div align='right'>[URL](https://dacon.io/competitions/official/236488/overview/description)&nbsp;&nbsp;&nbsp;&nbsp;최종 방문일: 2025-07-08</div>
+#### <div align='right'>[URL](https://dacon.io/competitions/official/236488/overview/description)&nbsp;&nbsp;&nbsp;&nbsp;최종 방문일: 2025.07.08</div>
 
 <table>
 <tr>
@@ -202,7 +202,7 @@
 ---
 
 ## 4. [DACON] Boost up AI 2025 : 신약 개발 경진대회
-#### <div align='right'>[URL](https://dacon.io/competitions/official/236518/overview/description)&nbsp;&nbsp;&nbsp;&nbsp;최종 방문일: 2025-07-31</div>
+#### <div align='right'>[URL](https://dacon.io/competitions/official/236518/overview/description)&nbsp;&nbsp;&nbsp;&nbsp;최종 방문일: 2025.07.31</div>
 
 <table>
 <tr>
@@ -279,7 +279,7 @@
 ---
 
 ## 5. [공모전] 2025 날씨 빅데이터 콘테스트: 소방 데이터와 날씨 빅데이터를 융합한 119 신고 건수 예측
-#### <div align='right'>[URL](https://bd.kma.go.kr/contest/main.do)&nbsp;&nbsp;&nbsp;&nbsp;최종 방문일: 2025-07-14</div>
+#### <div align='right'>[URL](https://bd.kma.go.kr/contest/main.do)&nbsp;&nbsp;&nbsp;&nbsp;최종 방문일: 2025.07.14</div>
 
 <table>
 <tr>
