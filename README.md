@@ -277,7 +277,7 @@
 ---
 
 ## 5. [공모전] 2025 날씨 빅데이터 콘테스트: 소방 데이터와 날씨 빅데이터를 융합한 119 신고 건수 예측
-#### <div align='right'>[URL](https://bd.kma.go.kr/contest/main.do)&nbsp;&nbsp;&nbsp;&nbsp;최종 방문일: 2025-??-??</div>
+#### <div align='right'>[URL](https://bd.kma.go.kr/contest/main.do)&nbsp;&nbsp;&nbsp;&nbsp;최종 방문일: 2025-07-14</div>
 
 <table>
 <tr>
@@ -285,7 +285,7 @@
 <details>
 <summary>열기 / 닫기</summary>
 
-<br>2025.??.?? - 2025.??.??</div>
+<br>2025.06.11 - 2025.06.27</div>
 
 ### 분석 개요
 
