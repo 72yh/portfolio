@@ -102,7 +102,7 @@
 
 * 상위권 경쟁자들의 실험에 따르면, Focal Loss보다 WCE Loss(Weighted Cross-Entropy Loss)가 소폭 더 안정적인 성능을 보였으며, 해당 문제에서는 WCE Loss가 더 적합한 손실 함수로 판단된다.
 
-* 일부 Windows 환경에서는 `DataLoader`의 `num_workers`를 0보다 크게 설정할 경우 충돌이 발생하는 문제가 알려져 있으며, 해당 프로젝트에서도 동일한 문제가 발생하였다. Visual Studio Code의 셀 마커(`# %%`) 기능으로 우회하였으나, 해당 해결 방안을 찾는 데 상당한 시간이 소요되었다.
+* 일부 Windows 환경에서는 `DataLoader`의 `num_workers`를 0보다 크게 설정할 경우 충돌이 발생하는 문제가 알려져 있다. 해당 프로젝트에서도 동일한 문제가 발생하여 Visual Studio Code의 셀 마커(`# %%`) 기능으로 우회하였으나, 해당 해결 방안을 찾는 데 상당한 시간이 소요되었다.
 
 </details>
 </td>
