@@ -1,1 +1,0 @@
-학습 및 평가 이미지는 DACON을 통해 접근 가능: https://dacon.io/competitions/official/236471/data
