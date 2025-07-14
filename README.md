@@ -100,7 +100,7 @@
 
 * 많은 경쟁자들이 Focal Loss와 오버샘플링을 병행하여 높은 성능을 달성한 반면, 해당 프로젝트에서는 두 기법을 함께 사용할 경우 성능 저하가 발생하였다. 이러한 차이는 제한적인 데이터 증강과 짧은 학습 기간에 기인한 것으로 해석된다.
 
-* 상위권 경쟁자들의 실험에 따르면, Focal Loss보다 Weighted Cross-Entropy Loss(WCE Loss)가 소폭 더 안정적인 성능을 보였으며, 해당 문제에서는 WCE Loss가 더 적합한 손실 함수로 판단된다.
+* 상위권 경쟁자들의 실험에 따르면, Focal Loss보다 WCE Loss(Weighted Cross-Entropy Loss)가 소폭 더 안정적인 성능을 보였으며, 해당 문제에서는 WCE Loss가 더 적합한 손실 함수로 판단된다.
 
 </details>
 </td>
