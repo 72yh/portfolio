@@ -166,7 +166,7 @@
 
 * 클래스 불균형을 고려하며 `StratifiedKFold`와 `optuna`를 통해 `LGBMClassifier`, `XGBClassifier`, `BalancedRandomForestClassifier`의 최적 하이퍼파라미터를 탐색하였다.
 
-* 각 모형의 Softmax 출력값을 단순 평균하여 앙상블을 구성하였으며, `optuna`를 통해 교차 검증 F1 Score를 최대화하는 악성 클래스 판별 임계값(Threshold)을 추가적으로 도출하였다.
+* 각 모형의 Softmax 출력값을 단순 평균해 앙상블을 구성하였으며, `optuna`를 통해 교차 검증 F1 Score를 최대화하는 악성 클래스 판별 임계값(Threshold)을 추가적으로 도출하였다.
 
 * 목표 기반 통계량(Target-Based Statistic)이 의료 데이터에서 효과적이라는 점에 착안하여, 범주형 변수는 악성 오즈비(Odds Ratio)를 반영한 WOE(Weight of Evidence)로 인코딩하였다. 단, 교차 검증 중 데이터 유출을 막기 위해 각 학습 폴드 기준으로 WOE를 계산하였다.
 
