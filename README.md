@@ -368,7 +368,7 @@
 
 * 학습과 평가 데이터 모두 부족해 일반화 성능을 신뢰할 수 없다.
 
-* 실험 사용한 BERT([ChemBERTa](https://github.com/seyonechithrananda/bert-loves-chemistry?tab=readme-ov-file)가 누락되었다.
+* 실험 사용한 BERT([ChemBERTa](https://github.com/seyonechithrananda/bert-loves-chemistry?tab=readme-ov-file))가 누락되었다.
 
 * Clustering 기반 파생 변수의 활용을 고려했으나, 물리화학적 특성이 지나치게 다양하고 도메인 지식이 부족해 적용하지 못하였다.
 
