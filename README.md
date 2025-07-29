@@ -312,7 +312,7 @@
 
 * 도메인 지식에 대한 사전 조사를 수행한 후, 분석에 필요한 데이터를 확보하였다.
 
-* MIT License 기반의 사전 학습 GNN([GROVER](https://github.com/tencent-ailab/grover))을 선별하고 활용하였다.
+* MIT License 기반의 사전학습 GNN([GROVER](https://github.com/tencent-ailab/grover))을 선별하고 활용하였다.
 
 * 데이터 유출을 방지하기 위한 교차검증 기반의 앙상블 기법을 설계하였다.
 
@@ -344,19 +344,33 @@
 
 ### 분석 방안
 
-* `rdkit` 라이브러리를 활용하여 `Canonical_Smiles`로부터 다양한 물리화학적 특성과 11종의 Fingerprint를 추출하였다.
+* `rdkit` 라이브러리를 활용하여 `Canonical_Smiles`로부터 200여종?의 물리화학적 특성과 11종의 Fingerprint를 추출하였다.
 
-* 적은 학습 데이터와 고차원 Fingerprint에 대응하기 위해 Tree 기반 모형을 적극 활용하였다. 각 Fingerprint마다 `LGBMRegressor`를 fit하고, 상위 10개의 교차검증 점수를 달성한 Fingerprint는 `RandomForestRegressor`를 통해 추가로 fit했다.
+* 고차원 Fingerprint와 제한된 학습 데이터를 고려해 Tree 기반 모델을 적용하였다. 각 Fingerprint별로 `LGBMRegressor`를 학습한 뒤, 교차검증 성능이 우수한 상위 5개 Fingerprint에 대해 `RandomForestRegressor`를 추가로 적용하였다.
 
-* GNN이 핫한데, 자료 수가 적어서 pretrained 써야 함 > 이거 누가 해줬으면 좋겠다...
+* 사전학습 GNN의 Embedding을 Ridge 회귀에 적용하였고, 모든 레이어를 고정해 MSE Loss 기준 Gradient Descent와 동일한 결과를 도출하였다.
+
+* 실험에 사용된 대부분의 모형을 앙상블하였고, `optuna`를 통해 OOF(Out-of-Fold) 교차검증 점수를 최대화하는 가중치를 도출하였다.
 
 ### 분석 결과
 
-* 진행중
+* 최종 제출 결과: 총 1,249명의 참가자들 중 ?등을 기록하였다.
+  
+  |구분 |순위 |Score |
+  |:------|------:|------:|
+  |**최종 제출** |**?** |**0.?** |
+  |- |1 |0.? |
+  |- |2 |0.? |
+  |- |3 |0.? |
+  |상위 10% |? |0.?|
 
 ### 개선점
 
-* 진행중
+* 학습과 평가 데이터 모두 부족해 일반화 성능을 신뢰할 수 없다.
+
+* 실험 사용한 BERT([ChemBERTa](https://github.com/seyonechithrananda/bert-loves-chemistry?tab=readme-ov-file)가 누락되었다.
+
+* Clustering 기반 파생 변수의 활용을 고려했으나, 물리화학적 특성이 지나치게 다양하고 도메인 지식이 부족해 적용하지 못하였다.
 
 </details>
 </td>
