@@ -363,6 +363,8 @@
 </tr>
 </table>
 
+---
+
 ## 5. [LG Aimers 7기] ???
 #### <div align='right'>[URL](https://lgaimers.ai/)&nbsp;&nbsp;&nbsp;&nbsp;최종 방문일: 2025.??.??</div>
 
@@ -389,4 +391,3 @@
 </tr>
 </table>
 
----
