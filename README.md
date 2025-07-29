@@ -346,7 +346,7 @@
 
 * `rdkit` 라이브러리를 활용하여 `Canonical_Smiles`로부터 200여종?의 물리화학적 특성과 11종의 Fingerprint를 추출하였다.
 
-* 고차원 Fingerprint와 제한된 학습 데이터를 고려해 Tree 기반 모델을 적용하였다. 각 Fingerprint별로 `LGBMRegressor`를 학습한 뒤, 교차검증 성능이 우수한 상위 5개 Fingerprint에 대해 `RandomForestRegressor`를 추가로 적용하였다.
+* 고차원 Fingerprint와 제한된 학습 데이터를 고려해 Tree 기반 모형을 적용하였다. 각 Fingerprint별로 `LGBMRegressor`를 학습한 뒤, 교차검증 성능이 우수한 상위 5개 Fingerprint에 대해 `RandomForestRegressor`를 추가로 적용하였다.
 
 * 사전학습 GNN의 Embedding을 Ridge 회귀에 적용하였고, 모든 레이어를 고정해 MSE Loss 기준 Gradient Descent와 동일한 결과를 도출하였다.
 
@@ -370,7 +370,7 @@
 
 * 실험에 사용한 BERT([ChemBERTa](https://github.com/seyonechithrananda/bert-loves-chemistry?tab=readme-ov-file))가 누락되었다.
 
-* Clustering 기반 파생 변수의 활용을 고려했으나, 물리화학적 특성이 지나치게 다양하고 도메인 지식이 부족해 적용하지 못하였다.
+* Clustering 기반의 파생 변수를 고려했으나, 물리화학적 특성이 지나치게 다양하고 도메인 지식이 부족해 적용하지 못하였다.
 
 </details>
 </td>
