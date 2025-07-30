@@ -347,7 +347,7 @@
 
 * 고차원 Fingerprint와 제한된 학습 데이터를 고려해 Tree 기반 모형을 적용하였다. 각 Fingerprint별로 `LGBMRegressor`를 학습한 뒤, 교차검증 성능이 우수한 상위 5개 Fingerprint에 대해 `RandomForestRegressor`를 추가로 적용하였다.
 
-* 사전학습 GNN의 Embedding을 Ridge 회귀에 적용하였고, 모든 레이어를 고정해 MSE Loss 기준 Gradient Descent와 동일한 결과를 도출하였다.
+* 모든 레이어를 고정한 사전학습 GNN의 Embedding을 `Ridge` 회귀에 적용하였고, MSE Loss 기준 Gradient Descent와 동일한 결과를 도출하였다.
 
 * 실험에 사용된 대부분의 모형을 앙상블하였고, `optuna`를 통해 OOF(Out-of-Fold) 교차검증 점수를 최대화하는 가중치를 도출하였다.
 
