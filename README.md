@@ -343,7 +343,7 @@
 
 ### 분석 방안
 
-* `rdkit` 라이브러리를 활용하여 `Canonical_Smiles`로부터 170여종의 물리화학적 특성과 11종의 Fingerprint를 추출하였다.
+* `rdkit` 라이브러리를 활용하여 `Canonical_Smiles`로부터 170여종의 물리화학적 특성과 11종의 분자 지문(Fingerprint)를 추출하였다.
 
 * 고차원 Fingerprint와 제한된 학습 데이터를 고려해 Tree 기반 모형을 적용하였다. 각 Fingerprint별로 `LGBMRegressor`를 학습한 뒤, 교차검증 성능이 우수한 상위 5개 Fingerprint에 대해 `RandomForestRegressor`를 추가로 적용하였다.
 
