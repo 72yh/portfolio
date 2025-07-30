@@ -1,0 +1,2 @@
+The pretrained weight (grover_large.pt) and model can be downloaded from the official GROVER GitHub repository: https://github.com/tencent-ailab/grover.
+Last accessed: July 29, 2025
