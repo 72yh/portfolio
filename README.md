@@ -316,6 +316,7 @@
 * 데이터 유출을 방지하기 위한 교차검증 기반의 앙상블 기법을 설계하였다.
 
 ### 분석 대상
+
 * 데이터 명세:
 
   |변수명 |변수 상세 |
@@ -377,7 +378,7 @@
 ---
 
 ## 5. [공모전] 2025 문화 디지털혁신 및 데이터 활용 공모전
-#### <div align='right'>[URL](https://lgaimers.ai/)&nbsp;&nbsp;&nbsp;&nbsp;최종 방문일: 2025.??.??</div>
+#### <div align='right'>[URL](https://www.culture.go.kr/digicon/)&nbsp;&nbsp;&nbsp;&nbsp;최종 방문일: 2025.08.18</div>
 
 <table>
 <tr>
@@ -385,13 +386,58 @@
 <details>
 <summary>열기 / 닫기</summary>
 
-<br>2025.??.?? - 2025.??.??</div>
+<br>2025.08.01 - 2025.08.07</div>
   
 ### 분석 개요
 
+* 국내 콘텐츠의 해외 소비 분석은 많지만, 해외 콘텐츠의 국내 소비 분석은 상대적으로 부족하다.
+
+* 국내 작품만으로는 파악하기 어려운 한국 시장 고유의 감성을, 글로벌 성과 대비 국내 선호가 두드러진 해외 영화의 리뷰 분석을 통해 도출하였다.
+
+### 주요 역할
+
+* 프로젝트 후반에 합류하여, 기존 분석의 오류를 보완하고 코드 구조를 재정비하였다.
+
+* 팀이 설정한 스토리라인을 유지하면서, 결과 해석이 일관되도록 기술적 지원을 수행하였다.
+
+* 본선 발표 자료를 준비하고 직접 발표하다.
+
 ### 분석 대상
 
+* 데이터 명세:
+
+  |변수명 |변수 상세 |데이터 출처 |
+  |:------|:------|:------:|
+  |`영화명` |KOBIS 기준 영화명 |[KOBIS](https://www.kobis.or.kr/kobis/business/stat/offc/findFormerBoxOfficeList.do) |
+  |`장르` |Box Office Mojo 기준 영화 장르 |[Box Office Mojo](https://www.boxofficemojo.com/) |
+  |`개봉연도` |KOBIS 기준 국내 개봉 연도 |[KOBIS](https://www.kobis.or.kr/kobis/business/stat/offc/findFormerBoxOfficeList.do) |
+  |`배급사` |KOBIS 기준 배급사명 |[KOBIS](https://www.kobis.or.kr/kobis/business/stat/offc/findFormerBoxOfficeList.do) |
+  |`예산` |Box Office Mojo 기준 제작 예산 [USD] |[Box Office Mojo](https://www.boxofficemojo.com/) |
+  |`국내매출액` |KOBIS 기준 국내 매출 [USD] |[KOBIS](https://www.kobis.or.kr/kobis/business/stat/offc/findFormerBoxOfficeList.do) |
+  |`세계매출액` |Box Office Mojo 기준 글로벌 매출 [USD] |[Box Office Mojo](https://www.boxofficemojo.com/) |
+  |`리뷰` |왓챠피디아 공개 리뷰 (한·영·특수문자 포함) |[WATCHA Peida](https://pedia.watcha.com/ko-KR) |
+
 ### 분석 방안
+
+* 국내 매출 비중이 일정 수준 이상, 글로벌 매출이 일정 수준 이하인 해외 영화를 '국내 특화형'으로 정의하고, 이진 분류를 수행하였다.  
+
+* 팀 제안서에 따라, 해석에 용이한 하드코딩 감성 사전과 Tree 기반 모형을 활용하였다.
+
+* 감성 사전은 ChatGPT와 Gemini에 리뷰 데이터를 입력하여 작성하였다.
+
+  |대분류 |소분류 |형태소 |
+  |:------|:------|:------|
+  |긍정적 반응 |감동 |인생, 인간애, 울컥하다, ...|
+  |긍정적 반응 |재미 |꿀잼, 흡입력, 웃기다, ...|
+  |기술적 평가 |연출·각본 |감독, 서사, 대사, ...|
+  |기술적 평가 |연기·캐릭터 |배우, 캐스팅, 인생캐, ...|
+  |부정적 반응 |지루함 |실망, 어려움, 비추, ...|
+  |부정적 반응 |스토리 전개 불만 |고구마, 급발진, 난해하다, ...|
+  |... |... |... |
+
+* 문맥을 파악하지 못하는 Tree 기반 모형의 한계를 보완하기 위해, 사전학습 BERT를 활용하여 리뷰의 긍정·부정 확률을 도출하고 입력 변수로 사용하였다.
+
+* 
 
 ### 분석 결과
 
@@ -404,7 +450,7 @@
 
 ---
 
-## 5. [LG Aimers 7기] ???
+## 6. [LG Aimers 7기] ???
 #### <div align='right'>[URL](https://lgaimers.ai/)&nbsp;&nbsp;&nbsp;&nbsp;최종 방문일: 2025.??.??</div>
 
 <table>
