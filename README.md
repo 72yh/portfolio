@@ -1,6 +1,66 @@
 # [장동은] 데이터 분석 포트폴리오
 저장소 내 각 폴더는 포트폴리오에 기재된 프로젝트 제목과 동일한 이름으로 구성되어 있으며, 프로젝트 수행에 활용된 파이썬 코드(`.py`, `.ipynb`), 일부 경량 모델의 가중치 파일, 정형 데이터, 요약 슬라이드 등이 포함되어 있습니다.
 
+* Unsupervised Learning
+
+  * Generative Models
+
+    * VAE
+
+    * NF
+
+    * OTM
+   
+    * EBM
+   
+    * DDPM/DDIM
+   
+  * Dimension Reduction
+ 
+    * PCA
+
+    * CCA
+
+    * Factor Analysis
+   
+    * Autoencoder
+   
+  * Clustering
+ 
+    * Hierarchical
+   
+    * Partitional
+   
+* Supervised Learning
+
+  * Parametric Models
+ 
+    * (Generalized) Linear Regression
+
+    * Partial Least Squares
+   
+    * LDA/QDA
+   
+    * Neural Networks
+   
+  * Nonparametric Models
+ 
+    * KNN
+   
+    * KDE
+   
+    * Local Linear Regression
+   
+    * Splines
+   
+    * GAM
+   
+    * Random Forest
+   
+    * Boosting
+   
+    * SVM
+
 ---
 
 ## 1. [DACON] 건설용 자갈 암석 종류 분류 AI 경진대회
