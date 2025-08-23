@@ -1,65 +1,83 @@
 # [장동은] 데이터 분석 포트폴리오
 저장소 내 각 폴더는 포트폴리오에 기재된 프로젝트 제목과 동일한 이름으로 구성되어 있으며, 프로젝트 수행에 활용된 파이썬 코드(`.py`, `.ipynb`), 일부 경량 모델의 가중치 파일, 정형 데이터, 요약 슬라이드 등이 포함되어 있습니다.
 
-* Unsupervised Learning
+<table>
+<tr>
+<td>
+<details>
+<summary>Applicable Unsupervised Learning Methods</summary>
 
-  * Generative Models
+ * Generative Models
 
-    * VAE
+   * VAE
 
-    * NF
+   * NF
 
-    * OTM
-   
-    * EBM
-   
-    * DDPM/DDIM
-   
-  * Dimension Reduction
+   * OTM
+  
+   * EBM
+  
+   * DDPM/DDIM
+  
+ * Dimension Reduction
+
+   * PCA
+
+   * CCA
+
+   * Factor Analysis
+  
+   * Autoencoder
+  
+ * Clustering
+
+   * Hierarchical
+  
+   * Partitional
+
+</details>
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td>
+<details>
+<summary>Applicable Supervised Learning Methods</summary>
  
-    * PCA
+ * Parametric Models
 
-    * CCA
+   * (Generalized) Linear Regression
 
-    * Factor Analysis
-   
-    * Autoencoder
-   
-  * Clustering
- 
-    * Hierarchical
-   
-    * Partitional
-   
-* Supervised Learning
+   * Partial Least Squares
+  
+   * LDA/QDA
+  
+   * Neural Networks
+  
+ * Nonparametric Models
 
-  * Parametric Models
- 
-    * (Generalized) Linear Regression
+   * KNN
+  
+   * KDE
+  
+   * Local Linear Regression
+  
+   * Splines
+  
+   * GAM
+  
+   * Random Forest
+  
+   * Boosting
+  
+   * SVM
 
-    * Partial Least Squares
-   
-    * LDA/QDA
-   
-    * Neural Networks
-   
-  * Nonparametric Models
- 
-    * KNN
-   
-    * KDE
-   
-    * Local Linear Regression
-   
-    * Splines
-   
-    * GAM
-   
-    * Random Forest
-   
-    * Boosting
-   
-    * SVM
+</details>
+</td>
+</tr>
+</table>
 
 ---
 
