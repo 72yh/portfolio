@@ -572,7 +572,7 @@
 
 * 고정된 길이의 과거 정보와 알려 미래 정보를 동시에 반영하기 위해 Transformer 기반 모형을 탐색하였으, Multi-Horizon 예측에 강점을 가진 TFT를 최종적으로 활용하였다.
 
-* `매출수량`의 Lag와 평균·표준편차·사분위수를 추가로 도입한 후 `LGBMRegressor`, `XGBRegressor`, `RandomForestRegressor`를 학습하였다. 0-Inflated Count Data에 대응하기 위해, `LGBMRegressor`, `XGBRegressor`는 Tweedie Regression을 목적함수로 설정하였다. `RandomForestRegressor`
+* `매출수량`의 Lag와 평균·표준편차·사분위수를 추가로 도입한 후 `LGBMRegressor`, `XGBRegressor`, `RandomForestRegressor`를 학습하였다. 0-Inflated Count Data에 대응하기 위해, `LGBMRegressor`, `XGBRegressor`는 Tweedie Regression을 목적함수로 설정하였다. `RandomForestRegressor`는 
 
 
 ### 분석 결과
