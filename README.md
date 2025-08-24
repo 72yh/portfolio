@@ -186,7 +186,7 @@
 
 * 기상 요인 외에도 신고 건수에 영향을 미치는 요인들을 사전 조사한 뒤, 관련 자료를 수집하였다.
 
-* 데이터 유출을 방지하도록 설계된 `TargetEncoder` 파이프라인을 구축하고, 시계열 특성에 적합한 교차 검증 전략을 수립하였다.
+* 데이터 유출을 방지하도록 설계된 `TargetEncoder` 파이프라인을 구축하였다.
 
 * 개별 모형의 하이퍼파라미터 최적화 및 최종 앙상블 구성을 담당하였다.
 
@@ -269,7 +269,7 @@
 
 * 데이터 규모의 한계로 딥러닝 모형은 제외하였으나, 시도했다면 경쟁력 있는 성능을 보였을 가능성도 있다.
 
-* 앙상블 모형의 `alpha` 산출 시, 각 모형의 예측값을 Meta Feature로 활용하여 교차 검증을 수행하였다. 검증 폴드를 포함한 전체 예측값을 입력으로 사용하는 방식은 관행적으로 널리 사용되지만, 데이터 유출에 해당하며 교차 검증 RMSE가 과소평가될 수 있다는 한계가 있다.
+* 앙상블 모형의 `alpha` 산출 시, 학습 Fold를 포함한 예측값을 Meta Feature로 활용하여 교차 검증을 수행하였다. 검증 폴드를 포함한 전체 예측값을 입력으로 사용하는 방식은 관행적으로 널리 사용되지만, 교차 검증 RMSE가 과소평가될 수 있다는 한계가 있다.
 
 </details>
 </td>
@@ -393,7 +393,7 @@
 
 * MIT License 기반의 사전학습 GNN([GROVER](https://github.com/tencent-ailab/grover))을 선별하고 활용하였다.
 
-* 데이터 유출을 방지하기 위한 교차검증 기반의 앙상블 기법을 설계하였다.
+* 데이터 유출을 방지하기 위한 교차 검증 기반의 앙상블 기법을 설계하였다.
 
 ### 분석 대상
 
@@ -426,11 +426,11 @@
 
 * `rdkit` 라이브러리를 활용하여 `Canonical_Smiles`로부터 170여종의 물리화학적 특성과 11종의 분자 지문(Fingerprint)를 추출하였다.
 
-* 고차원 Fingerprint와 제한된 학습 데이터를 고려해 Tree 기반 모형을 적용하였다. 각 Fingerprint별로 `LGBMRegressor`를 학습한 뒤, 교차검증 성능이 우수한 상위 5개 Fingerprint에 대해 `RandomForestRegressor`를 추가로 적용하였다.
+* 고차원 Fingerprint와 제한된 학습 데이터를 고려해 Tree 기반 모형을 적용하였다. 각 Fingerprint별로 `LGBMRegressor`를 학습한 뒤, 교차 검증 성능이 우수한 상위 5개 Fingerprint에 대해 `RandomForestRegressor`를 추가로 적용하였다.
 
 * 모든 레이어를 고정한 사전학습 GNN의 Embedding을 `Ridge` 회귀에 적용하였고, MSE Loss 기준 Gradient Descent와 동일한 결과를 도출하였다.
 
-* 실험에 사용된 대부분의 모형을 앙상블하였고, `optuna`를 통해 OOF(Out-of-Fold) 교차검증 점수를 최대화하는 가중치를 도출하였다.
+* 실험에 사용된 대부분의 모형을 앙상블하였고, `optuna`를 통해 OOF(Out-of-Fold) 교차 검증 점수를 최대화하는 가중치를 도출하였다.
 
 ### 분석 결과
 
@@ -593,11 +593,11 @@
 
 * 날짜 변수로부터 파생 변수를 생성하는 함수를 구현하였다.
 
-* 각 메뉴의 시계열성을 보존한 상태에서 K-Fold 교차검증이 가능하도록, `Scikit-Learn`과 호환되는 `BaseCrossValidator` 클래스를 개발하였다.
+* 각 메뉴의 시계열성을 보존한 상태에서 K-Fold 교차 검증이 가능하도록, `Scikit-Learn`과 호환되는 `BaseCrossValidator` 클래스를 개발하였다.
 
 * TFT(Temporal Fusion Transformer) 모형을 학습하였다.
 
-* 데이터 유출을 방지하기 위한 교차검증 기반의 앙상블 기법을 설계하였다.
+* 데이터 유출을 방지하기 위한 교차 검증 기반의 앙상블 기법을 설계하였다.
 
 ### 분석 대상
 
@@ -654,7 +654,7 @@
 
 * 0-Inflated Count Data에 대응하기 위해 `LGBMRegressor`와 `XGBRegressor`는 Tweedie 회귀를 목적 함수로 설정하였다.
 
-* 학습 데이터의 마지막 5주를 대상으로, 7일 단위 예측을 반복하는 Rolling 교차검증을 수행하였다.
+* 학습 데이터의 마지막 5주를 대상으로, 7일 단위 예측을 반복하는 Rolling 교차 검증을 수행하였다.
 
 * 각 모형의 OOF(Out-of-Fold) 예측값을 Meta Feature로 활용해 `Ridge` 회귀 기반의 앙상블을 수행하였으며, LOOCV를 통해 교차 검증 RMSE를 최소화하는 `alpha`를 탐색하였다.
 
