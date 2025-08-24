@@ -649,7 +649,7 @@
 
 * 고정된 길이의 과거 정보와 알려진 미래 정보를 동시에 반영하기 위해 Transformer 기반 모형을 탐색하였으며, Multi-Horizon 예측에 강점을 가진 `TemporalFusionTransformer`를 최종적으로 활용하였다.
 
-* 이거 수정중 여기부터 !!! 과거의 `매출수량`과 그 평균, 표준편차, 사분위수, `KMeans` 기반 군집을 파생 변수로 도입한 뒤 `LGBMRegressor`, `XGBRegressor`, `RandomForestRegressor`를 추가로 학습하였다.
+* 과거 `매출수량`에 기반한 통계량과 군집을 추가로 도입한 뒤,  `LGBMRegressor`, `XGBRegressor`, `RandomForestRegressor`를 학습하였다.
 
 * 0-Inflated Count Data에 대응하기 위해 `LGBMRegressor`와 `XGBRegressor`의 목적 함수를 Tweedie 회귀로 설정하였다.
 
