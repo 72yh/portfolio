@@ -1,0 +1,12 @@
+{
+    "model__tweedie_variance_power": 1.500958984610829,
+    "model__max_leaves": 175,
+    "model__max_depth": 5,
+    "model__learning_rate": 0.0013962951481356401,
+    "model__n_estimators": 1543,
+    "model__gamma": 0.09335506189128029,
+    "model__min_child_weight": 11,
+    "model__colsample_bytree": 0.8385745556402039,
+    "model__reg_alpha": 0.17270197198783233,
+    "model__reg_lambda": 0.5827605120909911
+}

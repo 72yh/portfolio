@@ -1,0 +1,2 @@
+artifacts\tft\tft-epoch=11-val_SMAPE=0.7250.ckpt
+! ! ! This is a dummy file due to file size limitations ! ! !
