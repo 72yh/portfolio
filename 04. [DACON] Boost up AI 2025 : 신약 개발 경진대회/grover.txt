@@ -1,3 +1,4 @@
 The pretrained weight (grover_large.pt) can be downloaded from the official GROVER GitHub repository: https://github.com/tencent-ailab/grover.
 Last accessed: July 29, 2025
-After downloading, place the file in the grover directory to run the code properly.
+After downloading, place the file in the `grover` directory to run the code properly.
+
