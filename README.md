@@ -578,7 +578,9 @@
 
 * 학습 데이터의 마지막 5주를 대상으로, 7일 단위 예측을 반복하는 Rolling 교차 검증을 수행하였다.
 
-* 각 모형의 OOF(Out-of-Fold) 예측값을 Meta Feature로 활용해 `Ridge` 회귀 기반의 앙상블을 수행하였으며, LOOCV를 통해 교차 검증 RMSE를 최소화하는 `alpha`를 탐색하였다.
+* 개별 모형은 `매출수량`이 0인 경우를 포함한 SMAPE로 검증하였으며, 앙상블 단계에서는 평가 지표에 맞춰 0을 제외하였다.
+
+* 각 모형의 OOF(Out-of-Fold) 예측값을 Meta Feature로 활용해 `Ridge` 회귀 기반의 앙상블을 수행하였으며, LOOCV를 통해 교차 검증 SMAPE를 최소화하는 `alpha`를 탐색하였다.
 
 ### 분석 결과
 
@@ -594,7 +596,9 @@
 
 ### 개선점
 
-* 단일 `TemporalFusionTransformer`의 평가 SMAPE가 검증 대비 과도하게 높게 나타났다. Tree 기반 모형에 비해 `TemporalFusionTransformer`는 `매출수량`이 0인 경우를 잘 예측했으나, 평가 지표에서는 0이 제외되어 성능이 낮게 나타난 것으로 보인다.
+* `TemporalFusionTransformer`는 Tree 기반 모형보다 `매출수량`이 0인 경우를 잘 예측하였으나, 평가 지표에서는 0이 제외되어 검증 대비 평가 SMAPE가 과도하게 높게 나타났다.
+
+* 반면, Tree 기반 모형은 매출수량이 0인 경우를 거의 예측하지 못해 평가 대비 검증 SMAPE가 과도하게 높게 나타났다.
 
 </details>
 </td>
