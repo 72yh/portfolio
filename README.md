@@ -8,7 +8,7 @@
 
 
 
-## 07. [개인] Paper Recommender: arXiv 메타데이터 기반 논문 추천 웹 서비스
+## 07. [개인] Paper Recommender: 언어 모형 기반 논문 추천 웹 서비스
 #### <div align='right'>[URL](https://paper-recommender-72yh.fly.dev/)&nbsp;&nbsp;&nbsp;&nbsp;최종 방문일: 2026.06.05</div>
 
 <table>
