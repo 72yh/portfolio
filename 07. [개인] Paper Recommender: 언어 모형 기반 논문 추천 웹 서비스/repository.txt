@@ -1,0 +1,1 @@
+This project is maintained in a separate repository: https://github.com/72-yh/paper-recommender/tree/main
