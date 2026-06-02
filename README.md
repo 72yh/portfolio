@@ -2,7 +2,35 @@
 
 * 기술 역량은 저장소 최상위의 `SUMMARY.pdf`에서 확인하실 수 있습니다.
 
+* 해당 문서에 프로젝트는 역순(최신순)으로 나열되어 있습니다.
+
 * 저장소 내 각 폴더는 포트폴리오에 기재된 프로젝트 제목과 동일한 이름으로 구성되어 있으며, 프로젝트 수행에 활용된 파이썬 코드(`.py`, `.ipynb`), 일부 경량 모형의 가중치, 정형 데이터 등이 포함되어 있습니다.
+
+
+
+## 07. [개인] Paper Recommender: arXiv 메타데이터 기반 논문 추천 웹 서비스
+#### <div align='right'>[URL](https://paper-recommender-72yh.fly.dev/)&nbsp;&nbsp;&nbsp;&nbsp;최종 방문일: 2026.06.05</div>
+
+<table>
+<tr>
+<td>
+<details>
+<summary>열기 / 닫기</summary>
+
+<br>2026.05.18 - 2025.06.05</div>
+  
+### 개요
+
+* 
+
+프로젝트 저장소: https://github.com/72-yh/paper-recommender/tree/main
+
+</details>
+</td>
+</tr>
+</table>
+
+---
 
 
 
