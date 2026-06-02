@@ -35,9 +35,9 @@
      
    * 제한된 운영 비용 안에서 추천 품질을 유지하기 위해 차원 축소와 양자화 기법을 비교하는 실험 방향을 제시하였다.
 
-* [OpenAI](https://openai.com/ko-KR/)의 개발 에이전트 [Codex](https://openai.com/ko-KR/index/introducing-the-codex-app/)와 협업해 백엔드 API, 메타데이터 수집·저장 파이프라인, 벡터 검색 경로, 프론트엔드 UI를 구현하였다.
+* [OpenAI](https://openai.com/ko-KR)의 개발 에이전트 [Codex](https://openai.com/ko-KR/index/introducing-the-codex-app)와 협업해 백엔드 API, 메타데이터 수집·저장 파이프라인, 벡터 검색 경로, 프론트엔드 UI를 구현하였다.
 
-   * Fly.io 기반 배포 및 운영 구성을 구현하고, 서비스가 정상적으로 동작하는지 검증하였다.
+   * [Fly.io](https://fly.io) 기반 배포 및 운영 구성을 구현하고, 서비스가 정상적으로 동작하는지 검증하였다.
  
    * 약 300만 편 규모의 논문 데이터를 다루는 과정에서 저장 공간과 운영 비용을 줄이기 위해 벡터 압축 및 검색 최적화 실험을 수행하였다.
 
