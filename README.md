@@ -274,7 +274,7 @@
 
 ---
 
-## 04. [DACON] Boost up AI 2025 : 신약 개발 경진대회
+## 04. [DACON] Boost up AI 2025: 신약 개발 경진대회
 #### <div align='right'>[URL](https://dacon.io/competitions/official/236518/overview/description)&nbsp;&nbsp;&nbsp;&nbsp;최종 방문일: 2025.07.31</div>
 
 <table>
