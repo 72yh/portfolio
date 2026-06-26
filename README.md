@@ -27,7 +27,7 @@
 
 ### 프로젝트 상세
 
-* 세부 구현 과정 및 결과는 별도의 [저장소](https://github.com/72-yh/paper-recommender/tree/main)에 정리하였다.
+* *해당 프로젝트에 한하여* 세부 구현 과정 및 결과는 별도의 [저장소](https://github.com/72-yh/paper-recommender/tree/main)에 정리하였다.
 
 * 프로젝트의 문제 정의와 핵심 기술 방향을 직접 설계하였다.
 
