@@ -1,0 +1,12 @@
+{
+    "model__num_leaves": 249,
+    "model__max_depth": 7,
+    "model__learning_rate": 0.003128061264002138,
+    "model__n_estimators": 309,
+    "model__min_split_gain": 0.053229514472552364,
+    "model__min_child_samples": 83,
+    "model__subsample": 0.8404270616044334,
+    "model__colsample_bytree": 0.928531610035008,
+    "model__reg_alpha": 3.922107925798527,
+    "model__reg_lambda": 8.974618333106958
+}

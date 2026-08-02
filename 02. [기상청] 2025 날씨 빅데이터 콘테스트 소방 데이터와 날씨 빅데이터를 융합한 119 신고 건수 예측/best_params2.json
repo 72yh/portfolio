@@ -1,0 +1,6 @@
+{
+    "model__num_leaves": 140,
+    "model__n_estimators": 629,
+    "model__bagging_fraction": 0.6461513179108561,
+    "model__feature_fraction": 0.6061807158644237
+}
