@@ -6,6 +6,27 @@
 
 * 저장소 내 각 폴더는 기재된 프로젝트 제목과 동일한 이름으로 구성되어 있으며, 프로젝트 수행에 활용된 코드(`.py`, `.ipynb`), 일부 경량 모형의 가중치, 정형 데이터 등이 포함되어 있습니다.
 
+## 08. [개인] n8n 기반 신입 채용 공고 수집 및 직무 적합도 평가 자동화
+#### <div align='right'>[URL](https://n8n.io)&nbsp;&nbsp;&nbsp;&nbsp;최종 방문일: 2026.08.03</div>
+
+<table>
+<tr>
+<td>
+<details>
+<summary>열기 / 닫기</summary>
+
+<br>2026.07.28 - 2026.08.02</div>
+
+### 
+
+
+</details>
+</td>
+</tr>
+</table>
+
+---
+
 ## 07. [개인] Paper Recommender: 언어 모형 기반 논문 추천 웹 서비스
 #### <div align='right'>[URL](https://paper-recommender-72yh.fly.dev/)&nbsp;&nbsp;&nbsp;&nbsp;최종 방문일: 2026.06.05</div>
 
