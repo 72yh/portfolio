@@ -38,12 +38,6 @@
 
 <br>2026.05.18 - 2026.06.05</div>
 
-### 프로젝트 결과
-
-* 프로젝트 URL: https://paper-recommender-72yh.fly.dev
-
-* GitHub 저장소: https://github.com/72-yh/paper-recommender/tree/main
-
 ### 프로젝트 개요
 
 * 새로운 연구 주제를 학습할 때는 기존에 읽은 논문을 출발점으로 관련 연구를 확장해 나가는 과정이 필요하다. 그러나 저널에 정식 등록되지 않은 최신 논문까지 확인하려면 arXiv를 직접 탐색해야 하며, 단순 키워드 검색만으로는 기존 논문과 실제 내용상 유사한 연구를 찾는 데 한계가 있다.
@@ -51,6 +45,12 @@
 * 이러한 탐색 부담을 줄이기 위해, 사용자가 arXiv 논문 URL을 입력하면 내용이 유사한 논문 10편을 추천하는 논문 추천 웹 서비스를 구현하였다.
 
 * 일반적 소프트웨어 엔지니어링 경험은 없었지만, AI 에이전트 활용 경험을 쌓을 기회라고 판단해 [OpenAI Codex](https://openai.com/index/introducing-the-codex-app/)를 활용하여 구현에 도전하였다.
+
+### 프로젝트 결과
+
+* 프로젝트 URL: https://paper-recommender-72yh.fly.dev
+
+* GitHub 저장소: https://github.com/72-yh/paper-recommender/tree/main
 
 ### 역할
 
