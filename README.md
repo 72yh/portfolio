@@ -41,7 +41,7 @@
 
     <br>
     
-    <img src="./08.%20%5B개인%5D%20n8n%20기반%20채용%20공고%20수집%20및%20직무%20적합도%20평가%20자동화/images/email.png" width="900">
+    <img src="./08.%20%5B개인%5D%20n8n%20기반%20채용%20공고%20수집%20및%20직무%20적합도%20평가%20자동화/images/email.png" width="800">
 
     </details>
     </td>
@@ -59,7 +59,7 @@
     <summary>이미지</summary>
 
     <br>
-    <img src="./08.%20%5B개인%5D%20n8n%20기반%20채용%20공고%20수집%20및%20직무%20적합도%20평가%20자동화/images/full_workflow.png" width="900">
+    <img src="./08.%20%5B개인%5D%20n8n%20기반%20채용%20공고%20수집%20및%20직무%20적합도%20평가%20자동화/images/full_workflow.png" width="800">
     
     </details>
     </td>
@@ -81,7 +81,7 @@
     <summary>이미지</summary>
 
     <br>
-    <img src="./08.%20%5B개인%5D%20n8n%20기반%20채용%20공고%20수집%20및%20직무%20적합도%20평가%20자동화/images/main_trigger.png" width="900">
+    <img src="./08.%20%5B개인%5D%20n8n%20기반%20채용%20공고%20수집%20및%20직무%20적합도%20평가%20자동화/images/main_trigger.png" width="800">
     
     </details>
     </td>
@@ -119,7 +119,7 @@
     <summary>이미지</summary>
 
     <br>
-    <img src="./08.%20%5B개인%5D%20n8n%20기반%20채용%20공고%20수집%20및%20직무%20적합도%20평가%20자동화/images/sub_trigger.png" width="900">
+    <img src="./08.%20%5B개인%5D%20n8n%20기반%20채용%20공고%20수집%20및%20직무%20적합도%20평가%20자동화/images/sub_trigger.png" width="800">
     
     </details>
     </td>
@@ -137,7 +137,7 @@
     <summary>이미지</summary>
 
     <br>
-    <img src="./08.%20%5B개인%5D%20n8n%20기반%20채용%20공고%20수집%20및%20직무%20적합도%20평가%20자동화/images/iframe.png" width="900">
+    <img src="./08.%20%5B개인%5D%20n8n%20기반%20채용%20공고%20수집%20및%20직무%20적합도%20평가%20자동화/images/iframe.png" width="800">
     
     </details>
     </td>
@@ -183,7 +183,7 @@
     <summary>이미지</summary>
 
     <br>
-    <img src="./08.%20%5B개인%5D%20n8n%20기반%20채용%20공고%20수집%20및%20직무%20적합도%20평가%20자동화/images/sub_result.png" width="900">
+    <img src="./08.%20%5B개인%5D%20n8n%20기반%20채용%20공고%20수집%20및%20직무%20적합도%20평가%20자동화/images/sub_result.png" width="800">
     
     </details>
     </td>
@@ -258,7 +258,7 @@
     <summary>이미지</summary>
 
     <br>
-    <img src="./08.%20%5B개인%5D%20n8n%20기반%20채용%20공고%20수집%20및%20직무%20적합도%20평가%20자동화/images/main_result.png" width="900">
+    <img src="./08.%20%5B개인%5D%20n8n%20기반%20채용%20공고%20수집%20및%20직무%20적합도%20평가%20자동화/images/main_result.png" width="800">
     
     </details>
     </td>
