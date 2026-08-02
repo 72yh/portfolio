@@ -74,7 +74,7 @@
 
 ---
 
-## 06. [LG Aimers 7기] 식음업장 메뉴 수요 예측 AI 온라인 해커톤
+## 06. [LG Aimers] 식음업장 메뉴 수요 예측 AI 온라인 해커톤
 #### <div align='right'>[URL](https://dacon.io/competitions/official/236559/overview/description)&nbsp;&nbsp;&nbsp;&nbsp;최종 방문일: 2025.08.25</div>
 
 <table>
