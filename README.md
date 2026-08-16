@@ -303,7 +303,7 @@
 
 * GitHub 저장소: https://github.com/72-yh/paper-recommender/tree/main
 
-    * **해당 프로젝트의 상세 내용은 해당 저장소에 정리하였다.**
+    * 프로젝트의 상세 내용은 해당 저장소에 정리하였다.
 
 ### 역할
 
