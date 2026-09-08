@@ -442,7 +442,7 @@
 
 * 개별 모형은 `매출수량`이 0인 경우를 포함한 SMAPE로 검증하였으며, 앙상블 단계에서는 평가 지표에 맞춰 0을 제외하였다.
 
-* 각 모형의 OOF(Out-of-Fold) 예측값을 Meta Feature로 활용해 `Ridge` 회귀 기반의 앙상블을 수행하였으며, LOOCV를 통해 교차 검증 SMAPE를 최소화하는 `alpha`를 탐색하였다.
+* 각 모형의 OOF(Out-of-Fold) 예측값을 Meta Feature로 활용해 `Ridge` 회귀 기반의 앙상블을 수행하였으며, 교차 검증 SMAPE를 최소화하는 `alpha`를 탐색하였다.
 
 ### 분석 결과
 
