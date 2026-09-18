@@ -429,7 +429,7 @@
   |`holiday` |휴일 여부 |
   |`isolated_holiday` |연휴가 아니면서 화·수·목에 위치한 휴일 여부|
   |`potential_group_menu` |잠재적 단체 메뉴 여부 |
-  |`holidays_left_in_year` |연도 내 잔 휴일 수 |
+  |`holidays_left_in_year` |연도 내 잔여 휴일 수 |
   |`holidays_left_in_streak` |연휴 내 잔여 휴일 수 |
 
 * 고정된 길이의 과거 정보와 알려진 미래 정보를 동시에 반영하며, Multi-Horizon 예측에 강점을 가진 `TemporalFusionTransformer`를 활용하였다.
